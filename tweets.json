@@ -1,0 +1,9 @@
+{ 
+  "QI0001" : {
+    "id": "QI0001",
+    "title": "First question ever asked",
+    "content": "How does this work?",
+    "tags": ["general"],
+    "likes": 0
+  }
+}

@@ -10,7 +10,6 @@ pub enum Error {
     ParseError(std::num::ParseIntError),
     MissingParameters,
     TweetNotFound,
-    DatabaseQueryError,
     InvalidAction,
 }
 
@@ -21,7 +20,6 @@ impl std::fmt::Display for Error {
             Error::MissingParameters => write!(f, "Missing parameter"),
             Error::TweetNotFound => write!(f, "Question not found"),
             Error::InvalidAction => write!(f, "Invalid action"),
-            Error::DatabaseQueryError => write!(f, "Cannot update, invalid data."),
         }
     }
 }

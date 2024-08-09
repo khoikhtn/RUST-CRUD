@@ -10,11 +10,4 @@ pub struct Tweet {
 }
 
 #[derive(Deserialize, Serialize, Debug, Clone, PartialEq, Eq, Hash)]
-pub struct TweetId(pub i32);
-
-#[derive(Deserialize, Serialize, Debug, Clone)]
-pub struct NewTweet {
-	pub title: String,
-	pub content: String,
-	pub tags: Option<Vec<String>>,
-}
+pub struct TweetId(pub String);

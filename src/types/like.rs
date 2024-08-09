@@ -9,9 +9,4 @@ pub struct Like {
 }
 
 #[derive(Deserialize, Serialize, Debug, Clone, PartialEq, Eq, Hash)]
-pub struct LikeId(pub i32);
-
-#[derive(Deserialize, Serialize, Debug, Clone)]
-pub struct NewLike {
-	pub tweet_id: TweetId,
-}
+pub struct LikeId(pub String);
